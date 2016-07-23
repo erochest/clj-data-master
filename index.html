@@ -1,119 +1,148 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!doctype html>
+<html class="no-js" lang>
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Eric Rochester — Mastering Clojure Data Analysis</title>
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Mastering Clojure Data Analysis — Eric Rochester</title>
         <meta name="description" content>
-        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#5D4037">
 
         <link rel="alternate" type="application/atom+xml" href="../atom.xml" title="Atom Feed">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
 
-        <link href="http://fonts.googleapis.com/css?family=Inder" rel="stylesheet" type="text/css">
-        <link href="http://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="../css/normalize.css">
-        <link rel="stylesheet" href="../css/main.css">
-        <link rel="stylesheet" href="../css/font-awesome.min.css">
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="../css/materialize.css">
         <link rel="stylesheet" href="../css/syntax.css">
-        <script src="../js/vendor/modernizr-2.6.2.min.js"></script>
+        <link rel="stylesheet" href="../css/main.css">
+
+        <script src="../js/vendor/modernizr-2.8.3.min.js"></script>
+
         
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <div id="container">
-          <header id="top">
-            <h1><a href="../">Eric Rochester</a></h1>
-          </header>
-
-          <div>
-            <h2 id="mastering-clojure-data-analysis">Mastering Clojure Data Analysis</h2>
-<h3 id="data">Data</h3>
-<p>Here are the datasets provided in the book for download.</p>
-<ul>
-<li><p><a href="temp-diffs.csv"><code>temp-diffs.csv</code></a> — This is the difference in temperatures for North American weather stations over the periods of their observations. This is used in chapter 2, on GIS analysis.</p></li>
-<li><p><a href="data/ufo.json"><code>ufo.json</code></a> — This is the cleaned-up UFO dataset from <a href="http://www.infochimps.com/datasets/60000-documented-ufo-sightings-with-text-descriptions-and-metada">Infochimps</a>. This is used in chapter 4, on classifying UFO descriptions.</p></li>
-<li><p><a href="data/post-sample-100000.json.gz"><code>post-sample-100000.json.gz</code></a> — This is the random sample of data from the <a href="http://blog.stackexchange.com/category/cc-wiki-dump/">StackOverflow data dump</a>. This is used in chapter 9, on social network data.</p></li>
-</ul>
-          </div>
-
-          <footer>
-            <div>
-              <div class="column">
-                <h1>Links</h1>
-                <ul>
-                  <li><a href="../">Home</a></li>
-                  <li><a href="../pages/">Index</a></li>
-                  <li><a href="../categories/">Categories</a></li>
-                </ul>
-              </div>
-              <div class="column">
-                <h1>Writing</h1>
-                <ul>
-                  <li><a href="../clj-data-analysis/">Clojure Data Analysis Cookbook</a></li>
-                  <li><a href="../clj-data-master/">Mastering Clojure Data Analysis</a></li>
-                </ul>
-              <!-- </div>
-            <div class='column'> -->
-                <h1>Projects</h1>
-              </div>
-              <div class="column">
-                <div class="profile">
-                  <h1>About Me</h1>
-                  <div><img src="http://www.gravatar.com/avatar/0e72db523b0c799c871b7755eda209f5.png" class="avatar">
-                        Dissertated on lexicography. Now I program in Haskell
-                        and write when I’m not building cool stuff for the
-                        Scholars’ Lab. Also, partner and parent. Do you notice
-                        that <em>sleep</em> isn’t on that list? <em>Coffee</em>
-                        is.
-                  </div>
-                </div>
-              </div>
-              <div class="column">
-                <div class="contact">
-                  <h1>Contact Me</h1>
-                  <ul>
-                    <li><a href="https://twitter.com/erochest"><i class="icon-twitter"></i></a></li>
-                    <li><a href="https://github.com/erochest"><i class="icon-github-alt"></i></a></li>
-                    <li><a href="https://plus.google.com/114676222173328397142"><i class="icon-google-plus"></i></a></li>
-                    <li><a href="http://www.linkedin.com/in/erochester"><i class="icon-linkedin"></i></a></li>
-                </ul>
-                </div>
-                <ul>
-                  <li><div><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/80x15.png" /></a><!-- <br /><span
-                        xmlns:dct="http://purl.org/dc/terms/"
-                        property="dct:title">Title of work</span> by <a
-                        xmlns:cc="http://creativecommons.org/ns#"
-                        href="http://www.ericrochester.com/something"
-                        property="cc:attributionName" rel="cc:attributionURL">Eric
-                        Rochester</a> is licensed under a <a rel="license"
-                        href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">Creative
-                        Commons Attribution-ShareAlike 3.0 Unported License</a>.
-                      --> </div></li>
-                  <li>Copyright &copy; 2013, Eric Rochester</li>
-
-                </ul>
-              </div>
+        <header>
+          <nav role="navigation">
+            <div class="nav-wrapper container">
+              <a class="brand-logo" href="../">e·</a>
+              <ul class="menu-list">
+                <li><a href="../posts/">blog</a></li>
+                <li><a href="../projects/">projects</a></li>
+                <li><a href="../reading/">reading</a></li>
+                <li><a href="../writing/">writing</a></li>
+                <li><a href="../about/">about</a></li>
+              </ul>
+              <ul id="slide-out" class="side-nav">
+                <li><a href="../">home</a></li>
+                <li><a href="../posts/">blog</a></li>
+                <li><a href="../projects/">projects</a></li>
+                <li><a href="../reading/">reading</a></li>
+                <li><a href="../writing/">writing</a></li>
+                <li><a href="../about/">about</a></li>
+              </ul>
+              <a href="#" data-activates="slide-out" class="button-collapse">
+                <i class="material-icons">menu</i>
+              </a>
             </div>
-            <div class="clearfix"></div>
-          </footer>
-        </div>
+          </nav>
+        </header>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
+        <main>
+          
+          <div id="container" class="container">
+<h2 id="mastering-clojure-data-analysis">Mastering Clojure Data Analysis</h2>
+<p>Here are the datasets provided in the book for download.</p>
+<div class="row clj-data-master">
+<div class="col s12 m6 l4">
+<div class="card">
+<div class="card-content">
+<span class="card-title">temp-diffs.csv</span>
+<p>
+This is the difference in temperatures for North American weather stations over the periods of their observations. This is from the NOAH Global Summary of the Day, and it is used in chapter2, on GIS analysis.
+</p>
+</div>
+<div class="card-action">
+<p><a href="temp-diffs.csv">Download</a> <a href="https://data.noaa.gov/dataset/global-surface-summary-of-the-day-gsod">Source</a></p>
+</div>
+</div>
+</div>
+<div class="col s12 m6 l4">
+<div class="card">
+<div class="card-content">
+<span class="card-title">ufo.json</span>
+<p>
+This is the cleaned-up UFO dataset from Infochimps with textual descriptions of the objects. This is used in chapter 4, on classifying UFO descriptions.
+</p>
+</div>
+<div class="card-action">
+<p><a href="data/ufo.json">Download</a> <a href="http://www.infochimps.com/datasets/60000-documented-ufo-sightings-with-text-descriptions-and-metada">Source</a></p>
+</div>
+</div>
+</div>
+<div class="col s12 m6 l4">
+<div class="card">
+<div class="card-content">
+<span class="card-title">post-sample-100000.json.gz</span>
+<p>
+This is the random sample of data from the StackOverflow data dump. This is used in chapter 9, on social network data.
+</div>
+<div class="card-action">
+<p><a href="temp-diffs.csv">Download</a> <a href="http://blog.stackexchange.com/category/cc-wiki-dump/">Source</a></p>
+</div>
+</div>
+</div>
+</div>
+          </div>
+          
+        </main>
+
+        <footer class="page-footer">
+          <div class="container">
+            <div class="right-align">
+              <ul class="social">
+                <li>eric rochester</li>
+                <li><a href="https://twitter.com/erochest">
+                    <i class="fa fa-twitter"></i> twitter</a></li>
+                <li><a href="https://github.com/erochest">
+                    <i class="fa fa-github"></i> github</a></li>
+                <li><a href="https://plus.google.com/114676222173328397142">
+                    <i class="fa fa-google-plus"></i> google+</a></li>
+                <li><a href="http://www.linkedin.com/in/erochester">
+                    <i class="fa fa-linkedin"></i> linkedin</a></li>
+              </ul>
+            </div>
+          </div>
+          <!--
+             - <div class="footer-copyright">
+             -   <div class="container right-align">
+             -     © 2016
+             -   </div>
+             - </div>
+             -->
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="../js/vendor/materialize.min.js"></script>
+        <script src="https://use.fontawesome.com/820ca58396.js"></script>
         <script src="../js/plugins.js"></script>
         <script src="../js/main.js"></script>
 
+
         <script>
-            var _gaq=[['_setAccount','UA-1756003-2'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-1756003-2','auto');ga('send','pageview');
         </script>
+        
     </body>
 </html>
